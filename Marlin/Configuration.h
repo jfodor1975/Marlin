@@ -490,9 +490,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   //Flsun hotend
-  #define DEFAULT_Kp 23.47
-  #define DEFAULT_Ki 4.41
-  #define DEFAULT_Kd 31.24
+  #define DEFAULT_Kp 13.27
+  #define DEFAULT_Ki 0.55
+  #define DEFAULT_Kd 79.91
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
