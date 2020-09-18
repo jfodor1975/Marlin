@@ -490,9 +490,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   //Flsun hotend
-  #define DEFAULT_Kp 27.76
-  #define DEFAULT_Ki 2.75
-  #define DEFAULT_Kd 96.93
+  #define DEFAULT_Kp 23.47
+  #define DEFAULT_Ki 4.41
+  #define DEFAULT_Kd 31.24
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -545,9 +545,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   //FLSun Bed 
-  #define DEFAULT_bedKp 39.39
-  #define DEFAULT_bedKi 4.41
-  #define DEFAULT_bedKd 87.92
+  #define DEFAULT_bedKp 205.93
+  #define DEFAULT_bedKi 60.23
+  #define DEFAULT_bedKd 1035.87
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
