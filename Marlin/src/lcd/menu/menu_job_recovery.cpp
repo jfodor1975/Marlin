@@ -28,14 +28,14 @@
 
 #if BOTH(HAS_LCD_MENU, POWER_LOSS_RECOVERY)
 
-#include "menu.h"
+#include "menu_item.h"
 #include "../../gcode/queue.h"
 #include "../../sd/cardreader.h"
 #include "../../feature/powerloss.h"
 
 static void lcd_power_loss_recovery_resume() {
   ui.return_to_status();
-  queue.inject_P(PSTR("M1000"));
+  queue.inject(F("M1000"));
 }
 
 void lcd_power_loss_recovery_cancel() {
