@@ -601,9 +601,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  41.83  //Flsun modifyed
-    #define DEFAULT_Ki   5.67  //Flsun modifyed
-    #define DEFAULT_Kd 77.10  //Flsun modifyed
+    #define DEFAULT_Kp  52.69  //Flsun modifyed
+    #define DEFAULT_Ki   6.24  //Flsun modifyed
+    #define DEFAULT_Kd  111.15  //Flsun modifyed
   #endif
 #endif // PIDTEMP
 
@@ -1178,7 +1178,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 32.5, 5, -2.466 }
+#define NOZZLE_TO_PROBE_OFFSET { 32.5, 5, -2.531 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1740,7 +1740,7 @@
 #endif
 
 // Homing speeds (mm/min)
-#define HOMING_FEEDRATE_MM_M { (50*60), (50*60), (4*60) }
+#define HOMING_FEEDRATE_MM_M { (25*60), (25*60), (4*60) }
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
