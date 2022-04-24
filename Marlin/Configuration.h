@@ -487,7 +487,7 @@
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  *
  */
-#define TEMP_SENSOR_0 5
+#define TEMP_SENSOR_0 1
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -495,7 +495,7 @@
 #define TEMP_SENSOR_5 0
 #define TEMP_SENSOR_6 0
 #define TEMP_SENSOR_7 0
-#define TEMP_SENSOR_BED 5
+#define TEMP_SENSOR_BED 1
 #define TEMP_SENSOR_PROBE 0
 #define TEMP_SENSOR_CHAMBER 0
 #define TEMP_SENSOR_COOLER 0
@@ -601,9 +601,15 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  52.69  //Flsun modifyed
-    #define DEFAULT_Ki   6.24  //Flsun modifyed
-    #define DEFAULT_Kd  111.15  //Flsun modifyed
+        //Flsun modifyed
+    #define DEFAULT_Kp 26.67
+    #define DEFAULT_Ki 3.16
+    #define DEFAULT_Kd 56.25
+
+//    #define DEFAULT_Kp  52.69  
+//    #define DEFAULT_Ki   6.24  //Flsun modifyed
+//    #define DEFAULT_Kd  111.15  //Flsun modifyed
+
   #endif
 #endif // PIDTEMP
 
@@ -647,9 +653,17 @@
   //#define DEFAULT_bedKd 305.4
   
   //FLSun Bed 
-  #define DEFAULT_bedKp 205.93
-  #define DEFAULT_bedKi 60.23
-  #define DEFAULT_bedKd 1035.87 
+  //Flsun modifyed
+
+    #define DEFAULT_bedKp 248.36
+    #define DEFAULT_bedKi 48.90
+    #define DEFAULT_bedKd 840.94
+
+//  #define DEFAULT_bedKp 205.93
+//  #define DEFAULT_bedKi 60.23
+//  #define DEFAULT_bedKd 1035.87 
+
+
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -1178,7 +1192,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 32.5, 5, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { 32.5, 5, -2.3 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
